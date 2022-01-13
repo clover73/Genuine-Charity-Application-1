@@ -6,13 +6,13 @@
     "@testing-library/jest-dom": "^5.11.10",
     "@testing-library/react": "^11.2.5",
     "@testing-library/user-event": "^12.8.3",
-    "ganache-cli": "^6.12.2",
+    "ganache-cli": "^6.5.0",
     "mocha": "^8.2.1",
     "react": "^17.0.2",
     "react-dom": "^17.0.2",
-    "react-scripts": "4.0.3",
-    "solc": "^0.4.17",
-    "truffle-hdwallet-provider": "^0.0.3",
+    "react-scripts": "^5.0.0",
+    "solc": "^0.8.11",
+    "truffle-hdwallet-provider": "^1.0.6",
     "web-vitals": "^1.1.1",
     "web3": "^1.0.0-beta.26"
   },
@@ -39,5 +39,20 @@
       "last 1 firefox version",
       "last 1 safari version"
     ]
-  }
+  },
+  "description": "<br /> <p align=\"center\">        <img src=\"https://drive.google.com/uc?export=view&id=17oE81x8pLWTI3GjqXKJKAtfxnJMUpdNl\" alt=\"Click to view\" width=\"120\" height=\"120\">",
+  "main": "compile.js",
+  "directories": {
+    "test": "test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Smuia/Genuine-Charity-Application-1.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Smuia/Genuine-Charity-Application-1/issues"
+  },
+  "homepage": "https://github.com/Smuia/Genuine-Charity-Application-1#readme"
 }

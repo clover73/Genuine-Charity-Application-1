@@ -10,7 +10,7 @@ body {
   font-family: 'Open Sans', Helvetica, Arial, sans-serif;
   justify-content: center;
   align-items: center;
-  background-image: url(bg.png);
+  background:#fefefe;
   background-size: cover;
   background-repeat: no-repeat;
   background-attachment: fixed;

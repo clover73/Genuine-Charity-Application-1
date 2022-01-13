@@ -1,8 +1,10 @@
-pragma solidity ^0.4.17;
+// SPDX-License-Identifier: GPL-3.0
+
+pragma solidity >0.4.0;
 
 
 
-contract Recieve{
+contract Receive{
 
     struct Beneficiary{
         string description;
@@ -19,10 +21,10 @@ contract Recieve{
     mapping(address => bool) approvers;
     uint public approversCount;
 
-    modifier restrict({
+    modifier restrict {
         require(msg.sender == reciever);
         _;
-    })
+    }
 
 
     function donate() public payable{
@@ -34,6 +36,7 @@ contract Recieve{
     }
 
     function createRequest(string description, uint maxContr, address recipient ) public restrict{
+        
         Beneficiary newRequest = Beneficiary({
             description: description,
             maxContr: maxContr,
@@ -56,7 +59,7 @@ contract Recieve{
         request.approvalCount++;
     }
 
-    function transfer(uint index) public restricted{
+    function transfer(uint index) public restricted {
         Beneficiary request = beneficiaries[index];
         require(request.approvalCount > approversCount/2);
 

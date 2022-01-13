@@ -16,23 +16,14 @@ Create a Transparent Charity System using Smart Contracts on Ethereum.
 
 ## STATUS
 
-* THIS PROJECT IS INCOMPLETE AND SHOULD ONLY BE USED FOR LOGICAL AND FUNDAMENTAL UNDERSTANDING PURPOSE.
 * THE SOLIDITY CODE IS WRITTEN IN OLD VERSION SO REWRITING IT IN NEW VERSION IS RECOMMENDED.
 * THE FRONTEND IS READY.
 * THE SMART CONTRACT IS NOT CONNECTED TO THE REACT APP.
 * THE SMART CONTRACT WORKS EXCEPT SOME LOGICAL ERRORS PROBABLY DUE TO THE ISSUES IN THE OLD VERSION USED TO BUILD THIS PROJECT 
 
-## 👨‍💻 Team members
-* [Shreyas Penkar](https://github.com/Shreyas-Penkar)
-* [Jainam Dharod](https://github.com/madmax19)
-* [Purva Anjarlekar](https://github.com/Caddonix)
-* [Aishwarya Harkare](https://github.com/Aishwarya856)
-* [Rohan Sawai](https://github.com/rohansawai)
-* [Santanu Kumar](https://github.com/santanukumar666)
+## 👨 Developer
+* [Simon Muia]()
 
-## 🙏 Mentors
-* [Pratim Ugale](https://github.com/pratimugale)
-* [Shivani Pawar](https://github.com/shivanipawar00)
 
 ## 🔗The Design of Charity System Based on Blockchain
 The charity system mode proposed is shown in the Figure below. There are four roles: donors, beneficiaries, 
@@ -78,7 +69,7 @@ beneficiary's account.
 
 ## 📃 Description
 
-* We have created a Solidity Smart Contract for this cause and we have used web3, ganache-cli, mocha, to test out our contract.
+* I have created a Solidity Smart Contract for this cause and we have used web3, ganache-cli, mocha, to test out our contract.
 
 * In the contracts folder, you will find a final solidity contract and the individual modules inside contracts_classified directory.
 
@@ -92,9 +83,9 @@ beneficiary's account.
 
 * The website and the test modules are not yet connected and the code is placed in seperate folders.
 
-* GitHub repo link: [Link to repository](https://github.com/Shreyas-Penkar/Genuine-Charity-Application)
-* Drive Link to Screenshots: [Link to Drive](https://github.com/Shreyas-Penkar/Genuine-Charity-Application)
-* Drive Link to Research Paper on Genuine Charity using Ethereum Contracts - [Link to Drive](https://drive.google.com/file/d/10AxpsmR_w7ERMPqgAfuE619U6sVTv5gn/view?usp=sharing)
+* GitHub repo link: [Link to repository](https://github.com/Smuia/blockchain-developer-bootcamp-final-project.git)
+* Drive Link to Screenshots: [Link to Drive](#)
+* Drive Link to Research Paper on Genuine Charity using Ethereum Contracts - [Link to Drive](#
 * EthFiddle Link to Test the Contract - [Link to EthFiddle](https://ethfiddle.com/4iviewhMlS)
 
 ## 🛠Technology stack
@@ -111,7 +102,7 @@ Tools and technologies that we learnt and used in the project.
 1. Clone the Repository
 
 ```bash
-git clone https://github.com/Shreyas-Penkar/Genuine-Charity-Application.git
+git clone https://github.com/Smuia/blockchain-developer-bootcamp-final-project.git
 ```
 
 2. Create a Node app and install dependencies
@@ -170,22 +161,7 @@ node deploy.js
 
 ## 📝Applications
 > Many fake charity organizations pose as genuine and loot money from innocent people in the name of charity. Most people want to donate money to a good cause of charity, but they are unsure if the money is going to reach the right hands of the destitute.  The blockchain system can bring transparency to online charity trusts. Contributors can see the journey of the donation in realtime and confirm if it’s reaching the deserving hands or not.
-
-## 👨‍🎓What did we learn from this project
-
-1. Shreyas Penkar - </br> It was awesome working as a leader in this project. I learnt how Blockchains work giving me a clear understanding of the various moving pieces and concepts regarding Blockchain. I was able to contribute to a solidity contract and write tests for the same. I gained many useful skills related to management, leadership, team-work and also got to know a lot about my co-workers and mentors. It was fun working with them on this project. So, overall it was a huge success.
-2. Jainam Dharod - </br>It was wonderful experience working on this project and exploring this wonderful new domain of Blockchain Technology.I learbt Smart Contracts, Solidity Programming language through this project. Apart from this, I also learnt a lot from my teammates and mentors who helped me every step throughout this project.Overall, this was a great experience for me. 
-3. Purva Anjarlekar - </br> Working on this project was a delightful and educative experience. I have to say, I couldn't have asked for better teammates. We all got to learn blockchain and the meets we had corresponding to this subject, especially the one in the beginning with our super senior was simply awesome. Apart from the topics in blockchain, working with this team helped me improve my people skills. Overall, this was an amazing experience and I have the team and SkillUp project to thank for it!
-4. Aishwarya Harkare - </br> Collaborating with the team was indeed wonderful experience for me. Working on this project I could dive into the whole new world of Blockchain Technology.I learnt Smart Contract , Solidity programming language through this project. I got to write a bit of Smart Contract for this Application. Further, I coordinated with my collegue Purva Anjarlekar in making Frontend of the website. Working with Teammates and mentors helped me gain skills such as team-work , communication skills. Thus, this was a great adventure for me.
-5. Rohan Sawai - </br> It was an incredible experience for me. I got to learn the concept of Blockchain technology and various concepts related to Blockchain. As a member of this team, I contributed to the Solidity contract, a small part of frontend and also wrote tests. I learned skills like team-work, time-management and how to effectively communicate with my team. Furthermore, would like to thank our leader, Shreyas and mentors for guiding me right from basic learning resources. Overall it was an amazing experience!    
-6. Santanu Kumar - </br> I had a great time working on this project.I was introduced to the blockchain technology.I got to learn vaious concepts regarding Blockchain, Solidity language etc. During the project I got to run a local blockchain system which helped me to clear my concepts.It was fun writing the smart contracts and testing them.Further ,close coordination and communication with my team members and mentors helped us complete this project and I would like to thank them all for guiding me and providing me with the resources.
-
-
-
-## 🔮Future scope
-* As the frontend is not yet connected to the contract, we could first connect it using a sample node server or by using React.
-* Make the UI/UX even better.
-* Make an Andriod app for this idea.
+.
 
 ## 🎨Screenshots
  ![Click to view](https://drive.google.com/uc?export=view&id=12TAfrme-NDTBkhtnWFr3TsyEOdtMP4Jl)

@@ -1,10 +1,11 @@
-pragma solidity ^0.4.17;
+// SPDX-License-Identifier: GPL-3.0
+pragma solidity >0.4.0;
 
 struct Payment{
    string description;
-   unit amount;
+   uint amount;
    address receiver;
    bool completed;
-   unit votercount;
+   uint votercount;
 
-};
+}

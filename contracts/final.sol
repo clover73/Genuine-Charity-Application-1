@@ -1,23 +1,25 @@
-pragma solidity ^0.4.17;
+// SPDX-License-Identifier: GPL-3.0
+
+pragma solidity >0.4.0;
 
 
-contract Genuine_Charity_DApp{
+contract Genuine_Charity_DApp {
   struct CharityOrg{
   string OrgName;
   address OrgAddress;
   string Desc;
-}
+  }
 
-struct Payment{
+  struct Payment{
    string description;
    uint amount;
    address receiver;
    bool completed;
 
 
-}
+    }
 
-struct Product{
+  struct Product{
     string productId;
     string productName;
     uint price;
@@ -26,7 +28,7 @@ struct Product{
 
        }
 
-struct Beneficiary{
+  struct Beneficiary{
     string description;
     uint maxContr;
     address store;
@@ -35,9 +37,9 @@ struct Beneficiary{
     mapping(address => bool) approvals;
     bool display;
 
-}
+    }
 
-struct Donator {
+  struct Donator {
 
     string name;
     string message;
@@ -46,14 +48,14 @@ struct Donator {
     // uint account_balance;
     address Address;
 
-}
+    }
 
 struct CoopStore{
   string StoreName;
   address StoreAddress;
   // uint account_balance;
 
-}
+  }
 
 // Beneficiary[] public CharityProjects;  //(should be a list of structs) Duplicate, needs to be merged with the Beneficiary Upload info struct
 Donator[] public donators;  //stores data of all donators
@@ -75,13 +77,13 @@ Product [] product;
   //CHARITY ORG METHODS
   CharityOrg public c;
 
-  function Genuine_Charity_DApp() public { //constructor
+  function Genuine_Charity_DApp_Function() public { 
       c = CharityOrg("Genuine_Charity_Team",msg.sender,"Team of Genuine Charity App");
-      product[product.length++] = Product("0","Computer",10,msg.sender,true);
-      product[product.length++] = Product("1","Laptop",20,msg.sender,true);
-      product[product.length++] = Product("2","Food",5,msg.sender,true);
-      product[product.length++] = Product("3","Books",3,msg.sender,true);
-      product[product.length++] = Product("4","Bag",1,msg.sender,true);
+      product[product.push(1)] = Product("0","Computer",10,msg.sender,true);
+      product[product.push(1)] = Product("1","Laptop",20,msg.sender,true);
+      product[product.push(1)] = Product("2","Food",5,msg.sender,true);
+      product[product.push(1)] = Product("3","Books",3,msg.sender,true);
+      product[product.push(1)] = Product("4","Bag",1,msg.sender,true);
       CoopStore memory co = CoopStore("Genuine_Charity_Cooperative_Store",msg.sender);
       CooperativeStores.push(co);
     }
@@ -113,7 +115,7 @@ Product [] product;
 
     // DONATOR METHODS
 
-    function create_donator(string _name ,string _message) public returns (uint) {
+    function create_donator(string[] memory _name, string[] memory  _message) public returns (uint) {
         //constructor
         Donator memory d = Donator({ name:_name, message:_message, projectID:1, value:10, Address:msg.sender });
         donators.push(d);
@@ -147,7 +149,7 @@ Product [] product;
 
     }
 
-    function createRequest(string description, uint maxContr, address store) public {
+    function createRequest(string[] memory description, uint maxContr, address store) public {
         Beneficiary memory newRequest = Beneficiary({
             description: description,
             maxContr: maxContr,
@@ -213,8 +215,10 @@ Product [] product;
 
 
 
-    function add_product(string id,string product_name,uint price) public{
+    function add_product(string memory id, string memory product_name, uint price) public{
+
       product[product.length++] = Product(id,product_name,price,msg.sender,true);
+
     }
 
 

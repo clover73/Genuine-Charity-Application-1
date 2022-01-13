@@ -1,23 +1,28 @@
-pragma solidity ^0.4.17;
+//SPDX-License-Identifier:GPL-3.0
+
+pragma solidity >0.4.0;
+
+
 
     struct Donator {
 
         string name;
         string message;
-        unit16 projectID;
+        uint16 projectID;
         uint value;
-        unit account_balance;
+        uint account_balance;
         address Address;
 
-    };
+    }
 
-    Donator[] public donators;  //stores data of all donators
+    
+contract make_donations{
 
-    contract make_donations{
+   Donator[] public donators;  //stores data of all donators
 
          Donator d;
 
-         function make_donations(string _name ,string _message, unit16 _projectID, uint _value,uint _account_balance) public {         //constructor
+         function make_donations_Function(string _name ,string _message, uint16 _projectID, uint _value,uint _account_balance) public {         //constructor
              d.name = _name;
              d.message = _message;
              d.projectID = _projectID;
@@ -26,12 +31,11 @@ pragma solidity ^0.4.17;
              d.Address = msg.sender;
            }
 
-         function getProjects() public view returns (Beneficiary [])
-       {
+         function getProjects() public view returns (Beneficiary[]) {
           return CharityProjects;
        }
 
-       function selectCharityProject (unit16 id) public{
+       function selectCharityProject (uint16 id) public{
           donators[id].projectID = CharityProjects[id];
        }
 

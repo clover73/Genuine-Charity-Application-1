@@ -1,15 +1,17 @@
-pragma solidity ^0.4.17;
+// SPDX-License-Identifier: GPL-3.0
+pragma solidity >0.4.0;
 
-string[] public CharityProjects;  //(should be a list of structs) Duplicate, needs to be merged with the Beneficiary Upload info struct
-/* string[] public BeneficiaryInfo;  //(should be a list of structs) Duplicate, needs to be merged with the Beneficiary Upload info struct */
+contract Charity_Organzation{
 
-struct CharityOrg{
+  string[]  CharityProjects;  //(should be a list of structs) Duplicate, needs to be merged with the Beneficiary Upload info struct
+  /* string[] public BeneficiaryInfo;  //(should be a list of structs) Duplicate, needs to be merged with the Beneficiary Upload info struct */
+
+ struct CharityOrg{
   string OrgName;
   address OrgAddress;
   string Desc;
-};
+  }
 
-contract Charity_Organzation{
 
   CharityOrg c;
 
