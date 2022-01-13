@@ -77,7 +77,7 @@ Product [] product;
   //CHARITY ORG METHODS
   CharityOrg public c;
 
-  function Genuine_Charity_DApp_Function() public { 
+  function Genuine_Charity_DApp_Function() public view { 
       c = CharityOrg("Genuine_Charity_Team",msg.sender,"Team of Genuine Charity App");
       product[product.push(1)] = Product("0","Computer",10,msg.sender,true);
       product[product.push(1)] = Product("1","Laptop",20,msg.sender,true);
